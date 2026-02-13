@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Summer Camp 2026 | Dawat-e-Islami Canada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Anton', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f2816',
+                            green: '#1a4a28',
+                            lime: '#4ade80', // bright green for accents
+                            red: '#ef4444',
+                            yellow: '#facc15'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 40, 22, 0.7), rgba(15, 40, 22, 0.8)), url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .pattern-bg {
+            background-color: #0f2816;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a4a28' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        /* Fallback styling for Ticket Tailor Widget if iframe is blocked */
+        .tt-widget-fallback p a:first-child {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a4a28;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .tt-widget-fallback p a:first-child:hover {
+            background-color: #0f2816;
+            transform: translateY(-2px);
+        }
+        .tt-widget-fallback small a {
+            color: #6b7280;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-lime selection:text-brand-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <!-- Logo Placeholder -->
+                    <div class="bg-white text-brand-dark font-bold px-2 py-1 rounded text-xs tracking-tighter">
+                        DAWAT-E-ISLAMI
+                    </div>
+                    <span class="text-brand-lime font-display text-lg tracking-wide hidden sm:block">CANADA YOUTH</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="hover:text-brand-lime px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="hover:text-brand-lime px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#schedule" class="hover:text-brand-lime px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</a>
+                        <a href="#register" class="bg-brand-lime text-brand-dark hover:bg-white hover:text-brand-dark px-4 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">Register Now</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-brand-dark border-t border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#schedule" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Schedule</a>
+                <a href="#register" class="text-brand-lime hover:text-white block px-3 py-2 rounded-md text-base font-bold">Register Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="relative hero-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="absolute top-0 right-0 p-4">
+            <div class="bg-brand-red rotate-3 text-white font-bold py-1 px-4 shadow-lg transform translate-y-4">
+                FINANCIAL HELP AVAILABLE
+            </div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <p class="text-brand-lime font-bold tracking-widest uppercase mb-4 animate-pulse">Dawat-e-Islami Canada Presents</p>
+            <h1 class="text-6xl md:text-8xl font-display uppercase leading-none mb-6">
+                Youth<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-lime to-green-400">Summer</span><br>
+                Camp <span class="text-4xl align-top text-white">2026</span>
+            </h1>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8 text-lg md:text-xl font-medium">
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                    <i data-lucide="calendar" class="w-5 h-5 text-brand-lime mr-2"></i>
+                    13th - 19th July
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-brand-lime mr-2"></i>
+                    Winnipeg, MB
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                    <i data-lucide="user" class="w-5 h-5 text-brand-lime mr-2"></i>
+                    16+ Male Only
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#register" class="bg-brand-lime text-brand-dark px-8 py-4 rounded-full font-bold text-xl hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(74,222,128,0.5)] flex items-center justify-center">
+                    Register for $80
+                    <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <a href="#details" class="px-8 py-4 rounded-full font-bold text-xl border-2 border-white/30 hover:bg-white/10 transition-all flex items-center justify-center">
+                    Learn More
+                </a>
+            </div>
+            
+            <div class="mt-8 text-sm text-gray-400">
+                <span class="inline-block bg-brand-red text-white px-2 py-1 rounded text-xs font-bold mr-2">HURRY</span>
+                LIMITED SPACE ONLY
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlights / What to Expect -->
+    <section id="details" class="py-20 bg-brand-green relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display uppercase mb-4">Camp Highlights</h2>
+                <div class="w-24 h-1 bg-brand-lime mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group">
+                    <div class="w-12 h-12 bg-brand-lime/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-lime transition-colors">
+                        <i data-lucide="book-open" class="w-6 h-6 text-brand-lime group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Seerah & Quran</h3>
+                    <p class="text-gray-400">Immerse yourself in the Seerah of the Beloved (SAW) and engage in spiritual Quran circles.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group">
+                    <div class="w-12 h-12 bg-brand-lime/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-lime transition-colors">
+                        <i data-lucide="music" class="w-6 h-6 text-brand-lime group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Nasheeds & Qasa'id</h3>
+                    <p class="text-gray-400">Experience the beauty of spiritual poetry and melodious Nasheeds in a serene environment.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group">
+                    <div class="w-12 h-12 bg-brand-lime/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-lime transition-colors">
+                        <i data-lucide="target" class="w-6 h-6 text-brand-lime group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Skills & Fun</h3>
+                    <p class="text-gray-400">Archery, team building, and various skill-based workshops designed to challenge and inspire.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group">
+                    <div class="w-12 h-12 bg-brand-lime/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-lime transition-colors">
+                        <i data-lucide="bus" class="w-6 h-6 text-brand-lime group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Transport Included</h3>
+                    <p class="text-gray-400">Worry-free travel. Transport to the campsite from Winnipeg is included in your ticket.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group">
+                    <div class="w-12 h-12 bg-brand-lime/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-lime transition-colors">
+                        <i data-lucide="utensils" class="w-6 h-6 text-brand-lime group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Food & Workshops</h3>
+                    <p class="text-gray-400">Delicious halal meals provided daily along with educational workshops.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/10 hover:border-brand-lime transition-colors group flex items-center justify-center relative overflow-hidden">
+                   <div class="absolute inset-0 bg-brand-lime opacity-10"></div>
+                   <div class="text-center z-10">
+                       <h3 class="text-5xl font-display text-brand-lime mb-1">7 DAYS</h3>
+                       <p class="font-bold text-white uppercase tracking-widest">Of Brotherhood</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Strip -->
+    <div id="schedule" class="bg-brand-lime text-brand-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl font-display uppercase">Mark Your Calendars</h3>
+                    <p class="font-medium opacity-80">Don't miss the journey of a lifetime</p>
+                </div>
+                <div class="flex items-center gap-8 bg-black/10 px-8 py-4 rounded-2xl backdrop-blur-sm">
+                    <div class="text-center">
+                        <span class="block text-sm font-bold opacity-60 uppercase">Starts</span>
+                        <span class="block text-2xl font-black">13 JUL</span>
+                        <span class="block text-sm font-bold">MONDAY</span>
+                    </div>
+                    <div class="h-10 w-px bg-brand-dark/20"></div>
+                    <div class="text-center">
+                        <span class="block text-sm font-bold opacity-60 uppercase">Ends</span>
+                        <span class="block text-2xl font-black">19 JUL</span>
+                        <span class="block text-sm font-bold">SUNDAY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-24 pattern-bg relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="bg-white text-brand-dark rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <!-- Left: Info -->
+                <div class="md:w-5/12 bg-gray-100 p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-display uppercase mb-2">Registration</h3>
+                        <p class="text-gray-600 text-sm mb-6">Secure your spot for the Youth Summer Camp 2026.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mt-0.5 mr-2"></i>
+                                <span class="text-sm font-medium">All Workshop Access</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mt-0.5 mr-2"></i>
+                                <span class="text-sm font-medium">Transportation from Winnipeg</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mt-0.5 mr-2"></i>
+                                <span class="text-sm font-medium">Accommodation & Meals</span>
+                            </div>
+                             <div class="flex items-start">
+                                <i data-lucide="alert-circle" class="w-5 h-5 text-brand-red mt-0.5 mr-2"></i>
+                                <span class="text-sm font-bold text-brand-red">Male Only (16+)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-gray-300">
+                        <div class="flex justify-between items-end">
+                            <span class="text-sm text-gray-500 font-medium">Total Cost</span>
+                            <span class="text-5xl font-display text-brand-dark">$80</span>
+                        </div>
+                        <p class="text-xs text-brand-red font-bold mt-2">* Financial help available if needed</p>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="md:w-7/12 p-8 bg-white overflow-y-auto max-h-[600px]">
+                    <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
+                    <div class="tt-widget">
+                        <div class="tt-widget-fallback">
+                            <p>
+                                <a href="https://buytickets.at/dawateislami1/2068988/share/9d591c3a387c0bd713c97545753df2f2" target="_blank">Click here to buy tickets</a><br />
+                                <small><a href="https://www.tickettailor.com?rf=wdg_292311" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small>
+                            </p>
+                        </div>
+                        <script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://buytickets.at/dawateislami1/2068988/share/9d591c3a387c0bd713c97545753df2f2" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script>
+                    </div>
+                    <!-- End of Ticket Tailor Widget -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-display text-white mb-6">DAWAT-E-ISLAMI CANADA</h2>
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <a href="mailto:dawateislamicanadayouth@gmail.com" class="flex items-center text-gray-400 hover:text-brand-lime transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                    dawateislamicanadayouth@gmail.com
+                </a>
+                <p class="text-gray-600 text-sm">© 2026 Dawat-e-Islami Canada Youth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
