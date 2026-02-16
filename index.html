@@ -38,29 +38,6 @@
             background-color: #0f2816;
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a4a28' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-        /* Fallback styling for Ticket Tailor Widget if iframe is blocked */
-        .tt-widget-fallback p a:first-child {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #1a4a28;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            margin-bottom: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        .tt-widget-fallback p a:first-child:hover {
-            background-color: #0f2816;
-            transform: translateY(-2px);
-        }
-        .tt-widget-fallback small a {
-            color: #6b7280;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-lime selection:text-brand-dark">
@@ -119,7 +96,7 @@
             <div class="flex flex-wrap justify-center gap-4 mb-8 text-lg md:text-xl font-medium">
                 <div class="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                     <i data-lucide="calendar" class="w-5 h-5 text-brand-lime mr-2"></i>
-                    13th - 19th July
+                    20th - 26th July
                 </div>
                 <div class="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                     <i data-lucide="map-pin" class="w-5 h-5 text-brand-lime mr-2"></i>
@@ -226,13 +203,13 @@
                 <div class="flex items-center gap-8 bg-black/10 px-8 py-4 rounded-2xl backdrop-blur-sm">
                     <div class="text-center">
                         <span class="block text-sm font-bold opacity-60 uppercase">Starts</span>
-                        <span class="block text-2xl font-black">13 JUL</span>
+                        <span class="block text-2xl font-black">20 JUL</span>
                         <span class="block text-sm font-bold">MONDAY</span>
                     </div>
                     <div class="h-10 w-px bg-brand-dark/20"></div>
                     <div class="text-center">
                         <span class="block text-sm font-bold opacity-60 uppercase">Ends</span>
-                        <span class="block text-2xl font-black">19 JUL</span>
+                        <span class="block text-2xl font-black">26 JUL</span>
                         <span class="block text-sm font-bold">SUNDAY</span>
                     </div>
                 </div>
@@ -275,14 +252,16 @@
                             <span class="text-sm text-gray-500 font-medium">Total Cost</span>
                             <span class="text-5xl font-display text-brand-dark">$80</span>
                         </div>
-                        <p class="text-xs text-brand-red font-bold mt-2">* Financial help available if needed</p>
+                        <p class="text-xs text-gray-600 font-medium mt-2">Payment link will be sent upon registration.</p>
+                        <p class="text-xs text-brand-red font-bold mt-1">* Financial help available if needed</p>
                     </div>
                 </div>
 
                 <!-- Right: Form -->
-                <div class="md:w-7/12 p-8 bg-white overflow-y-auto max-h-[600px]">
-                   <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
-<div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/all-tickets/canadayouthsummercamp26/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_292311" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/all-tickets/canadayouthsummercamp26/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script></div><!-- End of Ticket Tailor Widget -->
+                <div class="md:w-7/12 p-0 bg-white overflow-hidden">
+                    <div class="h-[600px] w-full overflow-y-auto">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckOn1SgC7j66MSS9PU-YCoBtXFnEZdAYBm47F84W-odmb4ng/viewform?embedded=true" class="w-full" height="2295" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
                 </div>
             </div>
         </div>
